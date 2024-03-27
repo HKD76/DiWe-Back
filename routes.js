@@ -96,7 +96,7 @@ router.delete('/repas-remove', verifyToken, deleteRepas);
 
 router.get('/users', verifyToken, getUsers);
 router.get('/user/:userID', verifyToken, getUser);
-router.post('/user-add', verifyToken, createUser);
+router.post('/user-add', createUser);
 router.put('/user-update', verifyToken, updateUser);
 router.delete('/user-remove', verifyToken, deleteUser);
 
